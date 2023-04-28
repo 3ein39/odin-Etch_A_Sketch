@@ -17,3 +17,9 @@
     height: 0;
     padding-bottom: calc(100% / 16 - 2px); /* set padding to maintain square shape and adjust for the border */
 }
+
+.blur {
+    filter: blur(2px); /* add a blur effect to the grid items */
+    background-color: rgba(235, 74, 75, 0.5); /* set the background color to a reddish color with some transparency */
+
+}
