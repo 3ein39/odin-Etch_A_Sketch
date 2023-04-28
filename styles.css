@@ -1,0 +1,19 @@
+.container {
+    background-color: #3882f6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
+    /*width: 800px; !* 16 items + (16 * 2) margin + (2 * 1) border = 362px *!*/
+}
+
+.square {
+    background-color: #2563eb;
+    /*height: 40px;*/
+    /*width: 40px;*/
+    border: 1px solid black;
+    /*margin: 1px;*/
+    flex-basis: calc(100% / 16 - 2px); /* set flex basis to 1/16th of the container width minus the margin */
+    height: 0;
+    padding-bottom: calc(100% / 16 - 2px); /* set padding to maintain square shape and adjust for the border */
+}
